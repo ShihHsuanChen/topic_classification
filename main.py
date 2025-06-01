@@ -74,7 +74,7 @@ def main(
 def cli():
     parser = ArgumentParser(
         prog='classify-topics',
-        description='Given',
+        description='Classify topics of the given sentences according to the sentences and make a summary.',
         formatter_class=ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
