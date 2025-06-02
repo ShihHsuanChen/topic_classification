@@ -61,3 +61,8 @@ options:
   -q, --quiet           don't print any processing message (default: False)
   --debug               debug mode (default: False)
 ```
+
+## TODO
+
+- JSON generation from Gemini API (free) seems not quite stable, try to use other LLM API.
+- Try to classify the sentences using embedding model and clustering algorithm (such as T-SEN) instead of LLM.
