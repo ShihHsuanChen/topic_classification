@@ -32,7 +32,7 @@
 5. Configuration
 
    1. Copy `.env.example` to `.env`
-   2. Setup `GEMINI_API_KEY` obtain from [Google AI Studio](https://aistudio.google.com/apikey)
+   2. Setup `GEMINI_API_KEY` obtained from [Google AI Studio](https://aistudio.google.com/apikey)
    
 
 ## Run Application
