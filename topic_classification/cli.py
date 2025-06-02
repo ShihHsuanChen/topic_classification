@@ -70,7 +70,7 @@ def cli():
         '--retry-delay',
         type=float,
         default=1,
-        help='time interval between each call to llm'
+        help='time interval in second between each call to llm'
     )
     parser.add_argument(
         '-q', '--quiet',
