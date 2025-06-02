@@ -23,7 +23,13 @@
    uv sync
    ```
 
-4. Configuration
+4. Acitvate the Environment
+   
+   ```
+   source .venv/bin/activate
+   ```
+
+5. Configuration
 
    1. Copy `.env.example` to `.env`
    2. Setup `GEMINI_API_KEY` obtain from [Google AI Studio](https://aistudio.google.com/apikey)
