@@ -40,14 +40,22 @@
 ### Simply Run
 
 ```
+classify-topics <input json file>
+```
+
+or 
+
+```
 python main.py <input json file>
 ```
 
-### More Options
+or 
 
 ```
-python main.py --help
+uv run main.py <input json file>
 ```
+
+### More Options
 
 ```
 usage: classify-topics [-h] [-o OUTPUT] [--retry RETRY] [--retry-delay RETRY_DELAY] [-q] [--debug] file
@@ -63,10 +71,16 @@ options:
                         output json path (default: None)
   --retry RETRY         maximum retry counts (default: 3)
   --retry-delay RETRY_DELAY
-                        time interval between each call to llm (default: 1)
+                        time interval in second between each call to llm (default: 1)
   -q, --quiet           don't print any processing message (default: False)
   --debug               debug mode (default: False)
 ```
+
+### Troubleshooting
+
+Now this app has high probability to get the `MaximumRetryError` due to the Gemini's API response.
+If happened, please try to increase the value of `--retry <retry>` and `--retry-delay <retry-delay>`.
+
 
 ## TODO
 
