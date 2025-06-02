@@ -1,10 +1,11 @@
 [project]
-name = "topic-classication"
+name = "topic-classification"
 version = "0.1.0"
-description = "Add your description here"
+description = "Classify topics of the given sentences according to the sentences and make a summary."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "chardet>=5.2.0",
     "grequests>=0.7.0",
     "jinja2>=3.1.6",
     "pandas>=2.2.3",
@@ -12,3 +13,9 @@ dependencies = [
     "pydantic-settings>2.0.0,<3.0.0",
     "requests>=2.32.3",
 ]
+
+[tool.uv]
+package = true
+
+[project.scripts]
+classify-topics = "topic_classification.cli:cli"
